@@ -4,4 +4,4 @@ comment="${1:-1}"
 
 git add .
 git commit -m "${comment}"
-# git push
+git push

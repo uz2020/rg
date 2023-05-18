@@ -52,7 +52,7 @@ func roffnewRun(cmd *cobra.Command, args []string) {
 	baseDir := "content"
 	for _, name := range args {
 		dirName := baseDir + "/" + filepath.Dir(name)
-		pathName := baseDir + "/" + name + ".ms"
+		pathName := baseDir + "/" + name + ".mm"
 		err := os.MkdirAll(dirName, 0755)
 		if err != nil {
 			fmt.Println(err)
