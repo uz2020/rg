@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 package main
 
-import "rg/cmd"
+import "github.com/uz2020/rg/cmd"
 
 func main() {
 	cmd.Execute()

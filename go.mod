@@ -1,4 +1,4 @@
-module rg
+module github.com/uz2020/rg
 
 go 1.20
 
