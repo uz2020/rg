@@ -124,11 +124,11 @@ func gendocs(path string) ([]byte, error) {
 func gendocsRun(cmd *cobra.Command, args []string) {
 	contentDir := "content"
 
-	err := os.Mkdir(contentDir, 0755)
+	err := os.MkdirAll(contentDir, 0755)
 	if err != nil {
 		panic(err)
 	}
-	err = os.Mkdir("docs", 0755)
+	err = os.MkdirAll("docs", 0755)
 	if err != nil {
 		panic(err)
 	}

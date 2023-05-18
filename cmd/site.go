@@ -49,13 +49,13 @@ func siteRun(cmd *cobra.Command, args []string) {
 
 	siteName := args[0]
 
-	err := os.Mkdir(siteName, 0755)
+	err := os.MkdirAll(siteName, 0755)
 	if err != nil {
 		fmt.Println("mkdir", err)
 		return
 	}
 
-	err = os.Mkdir(siteName+"/content", 0755)
+	err = os.MkdirAll(siteName+"/content", 0755)
 	if err != nil {
 		fmt.Println("mkdir", err)
 		return
